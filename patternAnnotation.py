@@ -22,10 +22,10 @@ stopwordlist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'the
 
 def main():
 
-    with open('D:\\UIUC Course Work\\CS 410 Text Info Systems\\Project\\Merged_Clean_Dataset.csv','r',encoding='utf-8',errors='ignore') as read_csv:
-        csv_reader = reader(read_csv)
-        list_of_rows = list(csv_reader)
-        read_csv.close()
+    # with open('D:\\UIUC Course Work\\CS 410 Text Info Systems\\Project\\Merged_Clean_Dataset.csv','r',encoding='utf-8',errors='ignore') as read_csv:
+    #     csv_reader = reader(read_csv)
+    #     list_of_rows = list(csv_reader)
+    #     read_csv.close()
     data = pd.read_csv (r'D:\\UIUC Course Work\\CS 410 Text Info Systems\\Project\\Merged_Clean_Dataset.csv',encoding="ISO-8859-1")  
     df = pd.DataFrame(data, columns= ['title'])
     print(df.head())
