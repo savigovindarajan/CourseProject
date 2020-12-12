@@ -9,6 +9,11 @@ import numpy as np
 from mlxtend.frequent_patterns import fpgrowth
 from mlxtend.preprocessing import TransactionEncoder
 
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+
+import itertools
+
 stopwordlist = list()
 stopwordlist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'there', 'about',
                 'once', 'during', 'out', 'very', 'having', 'with', 'they', 'own', 'an', 'be', 
@@ -23,12 +28,36 @@ stopwordlist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'the
                 'those', 'i', 'after', 'few', 'whom', 't', 'being', 'if', 'theirs', 'my', 'against', 'a', 'by', 
                 'doing', 'it', 'how', 'further', 'was', 'here', 'than','-','.']
 
+
+def cos_similarity(list1, list2):
+    context1 = list1
+    context2 = list2
+
+    listToStrContext1 = ' '.join(map(str, context1))
+    listToStrContext2 = ' '.join(map(str, context2))
+
+    corpus = [listToStrContext1, listToStrContext2]
+
+    # print(corpus)
+
+    tfidf_vectorizer = TfidfVectorizer()
+    tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
+    # print(tfidf_matrix.shape)
+    # print(tfidf_vectorizer.get_feature_names())
+    # print(tfidf_matrix)
+
+    cos_sim_array = cosine_similarity(tfidf_matrix, tfidf_matrix)
+    return cos_sim_array[0, 1]
+
+
 def main():
 
-    dlbp_data = pd.read_csv (r'DBLP_Dataset.csv',encoding="ISO-8859-1")  
+    dlbp_data = pd.read_csv (r'DBLP_Dataset.csv',encoding="ISO-8859-1")
+    print(dlbp_data[:1])
     author_title = dlbp_data
     dataset = author_title.to_numpy()
     list1 = dataset[:,2].tolist()
+
     #convert authors to lower case
     list2 = []
     for i in list1:
@@ -45,7 +74,8 @@ def main():
     freqauth_list = []
     for i in frequent['itemsets']:
         freqauth_list.append([x for x in i])
-    
+
+    #print(freqauth_list)
     freqauth_dict = {}
 
     for i in freqauth_list:
@@ -54,7 +84,7 @@ def main():
             if set(i).issubset(j):
                 title_idx_sublist.append(idx)
         freqauth_dict.update({tuple(i):title_idx_sublist})
-
+    #print(freqauth_dict)
     freqauth_title_dict = {}
     kstem = ks.PyKrovetzStemmer()
     for key, value in freqauth_dict.items():
@@ -73,7 +103,7 @@ def main():
                 if not temp_list in stopwordlist:
                     title_sublists.extend([kstem.stem(temp_list)])
         freqauth_title_dict.update({key:title_sublists})
-
+    #print(freqauth_title_dict)
     # Closed / topk titles of frequent authors
     freqauth_title_dict_closed = {}
 
@@ -169,6 +199,56 @@ def main():
                     newval.append(tempstr)
                     #print(newval)
                     freqauth_context_ind_dict.update({key:newval})
+
+
+    CI_list = list(freqauth_context_ind_dict.values())
+    freqauth_context_in_weights = {}
+    for key, value in freqauth_context_ind_dict.items():
+        freq_auth_CI_list = value
+        length_of_CI = len(value)
+        temp_dict = {}
+        for i in freq_auth_CI_list:
+            count_tmp = 0
+            for j in CI_list:
+                if (i in (j)):
+                    count_tmp += 1
+            weight = round(1 - ((count_tmp - 1) /  count_tmp), 2)
+            if (weight > 0.1):
+                temp_dict.update({i:weight})
+        sorted_weights_dict = sorted(temp_dict.items(), key=lambda x: x[1], reverse=True)
+        freqauth_context_in_weights.update({key:sorted_weights_dict})
+    #print(freqauth_context_in_weights)
+
+
+
+    freq_auth_transactions = {}
+    list_of_freq_auth = list(freqauth_context_in_weights.keys())
+    for i in range(0,len(freqauth_title_dict)):
+        temp_dict = {}
+        title_list = freqauth_title_dict.get(list_of_freq_auth[i])
+        CI_list   = freqauth_context_in_weights[list_of_freq_auth[i]]
+        CI_list_auth = []
+        for n,c in enumerate(CI_list):
+            CI_list_auth.append(c[0])
+        for j in range(0, len(title_list)):
+            #print(freqauth_context_in_weights[list_of_freq_auth[i]][j][0])
+            #print(CI_list_auth)
+            #print(title_list[j])
+            cos_sim = cos_similarity(CI_list_auth,title_list[j])
+            cos_sim = round(cos_sim, 3)
+            t_title = ' '.join(freqauth_title_dict[list_of_freq_auth[i]][j])
+            # if (cos_sim > 0.2):
+            temp_dict.update({t_title:cos_sim})
+
+        sorted_title_dict = sorted(temp_dict.items(), key=lambda x: x[1], reverse=True)
+        t_len = len(list(temp_dict.values()))
+        max_len = t_len
+        if (t_len > 4):
+            max_len = 4
+        sorted_title_dict1 = dict(list(sorted_title_dict)[0:max_len])
+        freq_auth_transactions.update({list_of_freq_auth[i]:sorted_title_dict1})
+
+    print(freq_auth_transactions)
 
 if __name__ == "__main__":
     main()
