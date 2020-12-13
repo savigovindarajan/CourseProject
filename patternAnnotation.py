@@ -1,6 +1,3 @@
-#pip install -i https://test.pypi.org/simple/ krovetz
-#pip install -U prefixspan
-from csv import reader
 import pandas as pd
 import krovetz as ks
 import re
@@ -8,13 +5,10 @@ from prefixspan import PrefixSpan
 import numpy as np
 from mlxtend.frequent_patterns import fpgrowth
 from mlxtend.preprocessing import TransactionEncoder
-
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-import itertools
-
-stopwordlist = list()
+# stopwordlist = list()
 stopwordlist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'there', 'about',
                 'once', 'during', 'out', 'very', 'having', 'with', 'they', 'own', 'an', 'be', 
                 'some', 'for', 'do', 'its', 'yours', 'such', 'into', 'of', 'most', 'itself',
@@ -26,20 +20,17 @@ stopwordlist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'the
                 'yourselves', 'then', 'that', 'because', 'what', 'over', 'why', 'so', 'can', 'did', 'not',
                 'now', 'under', 'he', 'you', 'herself', 'has', 'just', 'where', 'too', 'only', 'myself', 'which',
                 'those', 'i', 'after', 'few', 'whom', 't', 'being', 'if', 'theirs', 'my', 'against', 'a', 'by', 
-                'doing', 'it', 'how', 'further', 'was', 'here', 'than','-','.']
+                'doing', 'it', 'how', 'further', 'was', 'here', 'than', '-', '.']
 
 
 def cos_similarity(list1, list2):
+
     context1 = list1
     context2 = list2
-
     listToStrContext1 = ' '.join(map(str, context1))
     listToStrContext2 = ' '.join(map(str, context2))
 
     corpus = [listToStrContext1, listToStrContext2]
-
-    # print(corpus)
-
     tfidf_vectorizer = TfidfVectorizer()
     tfidf_matrix = tfidf_vectorizer.fit_transform(corpus)
     # print(tfidf_matrix.shape)
@@ -52,9 +43,8 @@ def cos_similarity(list1, list2):
 
 def main():
 
-    dlbp_data = pd.read_csv (r'DBLP_Dataset.csv',encoding="ISO-8859-1")
-    print(dlbp_data[:1])
-    author_title = dlbp_data
+    dblp_data = pd.read_csv (r'DBLP_Dataset.csv',encoding="ISO-8859-1")
+    author_title = dblp_data
     dataset = author_title.to_numpy()
     list1 = dataset[:,2].tolist()
 
@@ -70,21 +60,18 @@ def main():
     frequent = fpgrowth(df, min_support=0.001, use_colnames=True)
     frequent = frequent[frequent['itemsets'].str.len()>1]
 
-    frequent['itemsets']
     freqauth_list = []
     for i in frequent['itemsets']:
         freqauth_list.append([x for x in i])
 
-    #print(freqauth_list)
     freqauth_dict = {}
-
     for i in freqauth_list:
         title_idx_sublist = []
         for idx, j in enumerate(list2):
             if set(i).issubset(j):
                 title_idx_sublist.append(idx)
         freqauth_dict.update({tuple(i):title_idx_sublist})
-    #print(freqauth_dict)
+
     freqauth_title_dict = {}
     kstem = ks.PyKrovetzStemmer()
     for key, value in freqauth_dict.items():
@@ -103,10 +90,9 @@ def main():
                 if not temp_list in stopwordlist:
                     title_sublists.extend([kstem.stem(temp_list)])
         freqauth_title_dict.update({key:title_sublists})
-    #print(freqauth_title_dict)
-    # Closed / topk titles of frequent authors
-    freqauth_title_dict_closed = {}
 
+    # Closed / Top k titles of frequent authors
+    freqauth_title_dict_closed = {}
     for k, v in freqauth_title_dict.items():
         ps = PrefixSpan(v)
         closed_Seq_pattern = ps.topk(5, closed=True)
@@ -122,8 +108,6 @@ def main():
         authorlist = list(frequentlist[i])
         found = 0
         for k in range(0,len(cleanedList)):
-            #print(len(mergedauthorlist))
-            #print(val,k)
             for j in range(0, len(authorlist)):
                 if (authorlist[j] in(cleanedList[k])):
                     found = 1
@@ -139,28 +123,26 @@ def main():
 
         new_author_list.append(temp_author_list)
 
-    #print(new_author_list)
     context_indicator_list = []
     for i in range(0,len(new_author_list)):
         te = TransactionEncoder()
         te_ary = te.fit(new_author_list[i]).transform(new_author_list[i])
         df = pd.DataFrame(te_ary, columns=te.columns_)
         frequent_author_list = fpgrowth(df, min_support=0.5, use_colnames=True)
-    # print(i,frequent_author_list)
 
         supp = frequent_author_list.support.unique()  # all unique support count
-        # Dictionay storing itemset with same support count key
+        # Dictionary storing itemset with same support count key
         freq_dic = {}
         for i in range(len(supp)):
             inset = list(frequent_author_list.loc[frequent_author_list.support == supp[i]]['itemsets'])
             freq_dic[supp[i]] = inset
-        # Dictionay storing itemset with  support count <= key
+        # Dictionary storing itemset with  support count <= key
         freq_dic2 = {}
         for i in range(len(supp)):
             inset2 = list(frequent_author_list.loc[frequent_author_list.support <= supp[i]]['itemsets'])
             freq_dic2[supp[i]] = inset2
-        # Find Closed frequent itemset
 
+        # Find Closed frequent itemset
         close_freq = []
         for index, row in frequent_author_list.iterrows():
             isclose = True
@@ -194,13 +176,11 @@ def main():
             for i in context_indicator_list[idx]:
                 if len(i) > 0:                
                     tempstr = '&'.join(i)
-                    #print(tempstr)
                     newval = freqauth_context_ind_dict[key]
                     newval.append(tempstr)
-                    #print(newval)
                     freqauth_context_ind_dict.update({key:newval})
 
-
+# Context Indicator Weighting
     CI_list = list(freqauth_context_ind_dict.values())
     freqauth_context_in_weights = {}
     for key, value in freqauth_context_ind_dict.items():
@@ -217,27 +197,20 @@ def main():
                 temp_dict.update({i:weight})
         sorted_weights_dict = sorted(temp_dict.items(), key=lambda x: x[1], reverse=True)
         freqauth_context_in_weights.update({key:sorted_weights_dict})
-    #print(freqauth_context_in_weights)
-
-
 
     freq_auth_transactions = {}
     list_of_freq_auth = list(freqauth_context_in_weights.keys())
-    for i in range(0,len(freqauth_title_dict)):
+    for i in range(0, len(freqauth_title_dict)):
         temp_dict = {}
         title_list = freqauth_title_dict.get(list_of_freq_auth[i])
-        CI_list   = freqauth_context_in_weights[list_of_freq_auth[i]]
+        CI_list = freqauth_context_in_weights[list_of_freq_auth[i]]
         CI_list_auth = []
-        for n,c in enumerate(CI_list):
+        for n, c in enumerate(CI_list):
             CI_list_auth.append(c[0])
         for j in range(0, len(title_list)):
-            #print(freqauth_context_in_weights[list_of_freq_auth[i]][j][0])
-            #print(CI_list_auth)
-            #print(title_list[j])
             cos_sim = cos_similarity(CI_list_auth,title_list[j])
             cos_sim = round(cos_sim, 3)
             t_title = ' '.join(freqauth_title_dict[list_of_freq_auth[i]][j])
-            # if (cos_sim > 0.2):
             temp_dict.update({t_title:cos_sim})
 
         sorted_title_dict = sorted(temp_dict.items(), key=lambda x: x[1], reverse=True)
@@ -248,19 +221,12 @@ def main():
         sorted_title_dict1 = dict(list(sorted_title_dict)[0:max_len])
         freq_auth_transactions.update({list_of_freq_auth[i]:sorted_title_dict1})
 
-    #print(freq_auth_transactions)
-
-    ############ To find the strongest SSP - Match against similarity of the conrtext units
-
-    # print(freqauth_context_ind_dict)
-    #print(freqauth_context_in_weights.keys())
-
+    # To find the strongest SSP - Match against similarity of the conrtext units
 
     freq_auth_SSPs = {}
     list_of_freq_auth = list(freqauth_context_ind_dict.keys())
     list_of_freq_auth_CI =  list(freqauth_context_ind_dict.values())
-    print(len(list_of_freq_auth_CI))
-    #print(list_of_freq_auth[0],list_of_freq_auth_CI[0] )
+
     context_indicator_similarity = np.zeros([64,64],dtype = float)
     for i in range (0,len(list_of_freq_auth_CI)):
         for j in range (0,len(list_of_freq_auth_CI)):
@@ -270,7 +236,6 @@ def main():
                 context_indicator_similarity[i][j] = cos_sim
                 context_indicator_similarity[j][i] = cos_sim
 
-    ##########################
     context_indicator_similarity_idx = np.zeros([64, 3], dtype=int)
     for i in range(0,len(context_indicator_similarity)):
         context_indicator_similarity_idx[i] = np.argsort(context_indicator_similarity[i])[-3:]
@@ -281,17 +246,62 @@ def main():
         for j in range(0,len(context_indicator_similarity_idx[i])):
            temp_author_list_ssp.append(list_of_freq_auth[context_indicator_similarity_idx[i][j]])
         SSP_Author_List.append(temp_author_list_ssp)
-  #  print(SSP_Author_List)
+
     SSP_Title_List = []
-    #print(freqauth_context_in_weights)
-'''
-   for i in range(0,len(title_list)):
+
+    CI_list_title = list(freqauth_title_dict_closed.values())
+    CI_list1 = []
+    for i in (CI_list_title):
+        temp_list3 = []
+        for j in i:
+            CI_str = ' '.join(j[1])
+            temp_list3.append(CI_str)
+        CI_list1.append(list(set(temp_list3)))
+
+    for i in range(0,len(CI_list1)):
         temp_title_list_ssp = []
         for j in range(0,len(context_indicator_similarity_idx[i])):
-           temp_title_list_ssp.append(title_list[context_indicator_similarity_idx[i][j]])
-        SSP_Title_List.append(temp_title_list_ssp)
-    print(SSP_Title_List)
-'''
+            ssp_str = CI_list1[context_indicator_similarity_idx[i][j]]
+            temp_title_list_ssp.extend(ssp_str)
+        SSP_Title_List.append(list(set(temp_title_list_ssp)))
+
+    # Write the output to a CSV file
+    # a) list_of_freq_auth
+    # b) list_of_freq_auth_CI / freqauth_context_in_weights
+    # c) freq_auth_transactions
+    # d) SSP_Author_List
+    # e) SSP_Title_List
+    #for i in range(0, frequent_author_list):
+    #print(len(SSP_Title_List))
+    #print(SSP_Title_List)
+    titles_list_with_weight = list(freq_auth_transactions.values())
+    # Joining SSP authors
+    SSP_authors_formatted = []
+    for i in range(0,len(SSP_Author_List)):
+        temp_list = []
+        for j in range(0, len(SSP_Author_List[i])):
+            authors = '&'.join(list(SSP_Author_List[i][j]))
+            temp_list.append(authors)
+        SSP_authors_formatted.append(temp_list)
+
+
+    with open("./output.txt", 'w', encoding="utf-8") as f:
+        f.write('Pattern' + '||' + 'Context Indicator' + '||' + 'Transaction 1' + '||' +
+                'Transaction 2' + '||'  + 'Transaction 3' + '||'  + 'Transaction 4' + '||' + 'SSP - Co-Author' +
+                '||' + 'SSP - Title' + '\n')
+        for i in range(0, len(list_of_freq_auth)):
+            authors = ' '.join(list(list_of_freq_auth[i]))
+            f.write(authors + '||')
+            Context_indicators = '; '.join(list_of_freq_auth_CI[i])
+            f.write(Context_indicators + '||')
+            for j in (titles_list_with_weight[i].keys()):
+                f.write(j + '||')
+            ssp_authors = '; '.join(SSP_authors_formatted[i])
+            f.write(ssp_authors + '||')
+            ssp_titles = '; '.join(SSP_Title_List[i])
+            f.write(ssp_titles )
+            f.write('\n')
+
 
 if __name__ == "__main__":
     main()
