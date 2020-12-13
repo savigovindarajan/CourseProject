@@ -248,7 +248,50 @@ def main():
         sorted_title_dict1 = dict(list(sorted_title_dict)[0:max_len])
         freq_auth_transactions.update({list_of_freq_auth[i]:sorted_title_dict1})
 
-    print(freq_auth_transactions)
+    #print(freq_auth_transactions)
+
+    ############ To find the strongest SSP - Match against similarity of the conrtext units
+
+    # print(freqauth_context_ind_dict)
+    #print(freqauth_context_in_weights.keys())
+
+
+    freq_auth_SSPs = {}
+    list_of_freq_auth = list(freqauth_context_ind_dict.keys())
+    list_of_freq_auth_CI =  list(freqauth_context_ind_dict.values())
+    print(len(list_of_freq_auth_CI))
+    #print(list_of_freq_auth[0],list_of_freq_auth_CI[0] )
+    context_indicator_similarity = np.zeros([64,64],dtype = float)
+    for i in range (0,len(list_of_freq_auth_CI)):
+        for j in range (0,len(list_of_freq_auth_CI)):
+            cos_sim = cos_similarity(list_of_freq_auth_CI[i],list_of_freq_auth_CI[j])
+            cos_sim = round(cos_sim, 3)
+            if (i != j):
+                context_indicator_similarity[i][j] = cos_sim
+                context_indicator_similarity[j][i] = cos_sim
+
+    ##########################
+    context_indicator_similarity_idx = np.zeros([64, 3], dtype=int)
+    for i in range(0,len(context_indicator_similarity)):
+        context_indicator_similarity_idx[i] = np.argsort(context_indicator_similarity[i])[-3:]
+
+    SSP_Author_List = []
+    for i in range(0,len(list_of_freq_auth)):
+        temp_author_list_ssp = []
+        for j in range(0,len(context_indicator_similarity_idx[i])):
+           temp_author_list_ssp.append(list_of_freq_auth[context_indicator_similarity_idx[i][j]])
+        SSP_Author_List.append(temp_author_list_ssp)
+  #  print(SSP_Author_List)
+    SSP_Title_List = []
+    #print(freqauth_context_in_weights)
+'''
+   for i in range(0,len(title_list)):
+        temp_title_list_ssp = []
+        for j in range(0,len(context_indicator_similarity_idx[i])):
+           temp_title_list_ssp.append(title_list[context_indicator_similarity_idx[i][j]])
+        SSP_Title_List.append(temp_title_list_ssp)
+    print(SSP_Title_List)
+'''
 
 if __name__ == "__main__":
     main()
