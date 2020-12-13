@@ -1,10 +1,8 @@
 ﻿id,title,MergedAuthors
 161326,Browsing Citation Clusters for Academic Literature Search - A Simulation Study with Systematic Reviews.,Juan_Pablo_Bascur Suzan_Verberne Nees_Jan_van_Eck Ludo_Waltman
-161327,Remembering Don Swanson - Link to Bibliometric-enhanced Information Retrieval.,Aparna_Basu
 161328,BIR - A Time and a Place to Envision Concepts and Tools around Bibliometrics.,Marc_Bertin Iana_Atanassova
 161329,"Relations Between Relevance Assessments, Bibliometrics and Altmetrics.",Timo_Breuer Philipp_Schaer Dirk_Tunger
 161330,New Datasets and a Benchmark of Document Network Embedding Methods for Scientific Expert Finding.,Robin_Brochier Antoine_Gourru Adrien_Guille Julien_Velcin
-161331,Preface to the 10th Workshop on Bibliometric-enhanced Information Retrieval at ECIR 2020.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
 161332,BIR and BIRNDL - A Marathon towards a Congregation of Scientific Document Processing Community.,Muthu_Kumar_Chandrasekaran
 161333,Neural Citation Recommendation - A Reproducibility Study.,Michael_FÃ¤rber Timo_Klein Joan_Sigloch
 161334,Bibliometrics-aided Retrieval - A Success Story.,Wolfgang_GlÃ¤nzel
@@ -13,7 +11,6 @@
 161337,Evaluating Pretrained Transformer Models for Citation Recommendation.,Rodrigo_Nogueira Zhiying_Jiang Kyunghyun_Cho Jimmy_Lin
 161338,Building Bridges.,Andrea_Scharnhorst
 161339,Some Questions for Information Science Arising from the History and Philosophy of Science.,Henry_Small
-161340,Why we Need Another Ten Years of Bibliometric-enhanced Information Retrieval.,Mike_Thelwall
 161341,Metrics and Trends in Assessing the Scientific Impact.,George_Tsatsaronis
 161342,Anniversary Statement.,Howard_D._White
 161343,Usage and Citation Metrics for Ranking Algorithms in Legal Information Retrieval Systems.,Gineke_Wiggers Suzan_Verberne
@@ -44,7 +41,6 @@
 178077,Reproducible Online Search Experiments.,Timo_Breuer
 178078,Inductive Document Network Embedding with Topic-Word Attention.,Robin_Brochier Adrien_Guille Julien_Velcin
 178079,Breaking the Subtopic Barrier in Cross-Document Event Coreference Resolution.,Michael_Bugert Nils_Reimers Shany_Barhom Ido_Dagan Iryna_Gurevych
-178080,Bibliometric-Enhanced Information Retrieval 10th Anniversary Workshop Edition.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
 178081,Diagnosing BERT with Retrieval Heuristics.,Arthur_CÃ¢mara Claudia_Hauff
 178082,Machine-Actionable Data Management Plans - A Knowledge Retrieval Approach to Automate the Assessment of Funders' Requirements.,JoÃ£o_Manuel_Fernandes_Cardoso Diogo_ProenÃ§a JosÃ©_Luis_Borbinha
 178083,Eve2Sign - Creating Signed Networks of News Events.,Roshni_Chakraborty Srishti_Bhandari Nilotpal_Chakraborty Ritwika_Das
@@ -180,14 +176,12 @@
 178213,Recommending Music Curators - A Neural Style-Aware Approach.,Jianling_Wang James_Caverlee
 178214,Answering Event-Related Questions over Long-Term News Article Archives.,Jiexin_Wang Adam_Jatowt Michael_FÃ¤rber Masatoshi_Yoshikawa
 178215,The COVID-19 Open Research Dataset - Abstract.,Lucy_Lu_Wang Kyle_Lo
-178216,Bibliometric-Enhanced Legal Information Retrieval.,Gineke_Wiggers
 178217,KvGR - A Graph-Based Interface for Explorative Sequential Question Answering on Heterogeneous Information Sources.,Hans_Friedrich_Witschel Kaspar_Riesen Loris_Grether
 178218,Dynamic Heterogeneous Graph Embedding Using Hierarchical Attentions.,Luwei_Yang Zhibo_Xiao Wen_Jiang Yi_Wei Yi_Hu Hao_Wang
 178219,SmokPro - Towards Tobacco Product Identification in Social Media Text.,Himakar_Yv Kartikey_Pant Radhika_Mamidi
 178220,Accelerating Substructure Similarity Search for Formula Retrieval.,Wei_Zhong Shaurya_Rohatgi Jian_Wu C._Lee_Giles Richard_Zanibbi
 178221,Counterfactual Online Learning to Rank.,Shengyao_Zhuang Guido_Zuccon
 178222,DSR - A Collection for the Evaluation of Graded Disease-Symptom Relations.,Markus_Zlabinger Sebastian_HofstÃ¤tter Navid_Rekabsaz Allan_Hanbury
-252272,"Proceedings of the 10th International Workshop on Bibliometric-enhanced Information Retrieval co-located with 42nd European Conference on Information Retrieval, BIR@ECIR 2020, Lisbon, Portugal, April 14th, 2020 [online only].",Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
 252565,"Advances in Information Retrieval - 42nd European Conference on IR Research, ECIR 2020, Lisbon, Portugal, April 14-17, 2020, Proceedings, Part I",Joemon_M._Jose Emine_Yilmaz JoÃ£o_MagalhÃ£es Pablo_Castells Nicola_Ferro MÃ¡rio_J._Silva FlÃ¡vio_Martins
 252566,"Advances in Information Retrieval - 42nd European Conference on IR Research, ECIR 2020, Lisbon, Portugal, April 14-17, 2020, Proceedings, Part II",Joemon_M._Jose Emine_Yilmaz JoÃ£o_MagalhÃ£es Pablo_Castells Nicola_Ferro MÃ¡rio_J._Silva FlÃ¡vio_Martins
 252567,"Proceedings of the Workshop on Semantic Indexing and Information Retrieval for Health from heterogeneous content types and languages co-located with 42nd European Conference on Information Retrieval, SIIRH@ECIR 2020, Lisbon, Portugal, April 14, 2020.",Francisco_M._Couto Martin_Krallinger
@@ -214,8 +208,6 @@
 521656,A Comparative Study of Summarization Algorithms Applied to Legal Case Judgments.,Paheli_Bhattacharya Kaustubh_Hiware Subham_Rajgaria Nilay_Pochhi Kripabandhu_Ghosh Saptarshi_Ghosh
 521657,Iterative Relevance Feedback for Answer Passage Retrieval with Passage-Level Semantic Match.,Keping_Bi Qingyao_Ai W._Bruce_Croft
 521658,The Effect of Algorithmic Bias on Recommender Systems for Massive Open Online Courses.,Ludovico_Boratto Gianni_Fenu Mirko_Marras
-521659,Bibliometric-Enhanced Information Retrieval - 8th International BIR Workshop.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
-521660,Editorial for the 8th Bibliometric-enhanced Information Retrieval Workshop at ECIR 2019.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
 521661,A Neural Approach to Entity Linking on Wikidata.,Alberto_Cetoli Stefano_Bragaglia Andrew_D._O'Harney Marc_Sloan Mohammad_Akbari
 521662,Automatic Recognition of Narrative Drama Units - A Structured Learning Approach.,Danilo_Croce Roberto_Basili Vincenzo_Lombardo Eleonora_Ceccaldi
 521663,Local and Global Query Expansion for Hierarchical Complex Topics.,Jeffrey_Dalton Shahrzad_Naseri Laura_Dietz James_Allan
@@ -312,7 +304,6 @@
 521754,Rethinking 'Advanced Search' - A New Approach to Complex Query Formulation.,Tony_Russell-Rose Jon_Chamberlain Udo_Kruschwitz
 521755,Logic-Based Models for Social Media Retrieval.,Firas_Sabbah
 521756,MedSpecSearch - Medical Specialty Search.,Mehmet_UluÃ§_Sahin Eren_Balatkan Cihan_Eran Engin_Zeydan Reyyan_Yeniterzi
-521757,Bibliometric-Enhanced arXiv - A Data Set for Paper-Based and Citation-Based Tasks.,Tarek_Saier Michael_FÃ¤rber
 521758,Term Selection for Query Expansion in Medical Cross-Lingual Information Retrieval.,Shadi_Saleh Pavel_Pecina
 521759,An Extended CLEF eHealth Test Collection for Cross-Lingual Information Retrieval in the Medical Domain.,Shadi_Saleh Pavel_Pecina
 521760,Information Retrieval Models for Contact Recommendation in Social Networks.,Javier_Sanz-Cruzado Pablo_Castells
@@ -350,7 +341,6 @@
 653556,"Advances in Information Retrieval - 41st European Conference on IR Research, ECIR 2019, Cologne, Germany, April 14-18, 2019, Proceedings, Part I",Leif_Azzopardi Benno_Stein Norbert_Fuhr Philipp_Mayr Claudia_Hauff Djoerd_Hiemstra
 653557,"Advances in Information Retrieval - 41st European Conference on IR Research, ECIR 2019, Cologne, Germany, April 14-18, 2019, Proceedings, Part II",Leif_Azzopardi Benno_Stein Norbert_Fuhr Philipp_Mayr Claudia_Hauff Djoerd_Hiemstra
 653558,"Proceedings of the 1st Interdisciplinary Workshop on Algorithm Selection and Meta-Learning in Information Retrieval co-located with the 41st European Conference on Information Retrieval (ECIR 2019), Cologne, Germany, April 14, 2019.",JÃ¶ran_Beel Lars_Kotthoff
-653559,"Proceedings of the 8th International Workshop on Bibliometric-enhanced Information Retrieval (BIR 2019) co-located with the 41st European Conference on Information Retrieval (ECIR 2019), Cologne, Germany, April 14, 2019.",Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
 653560,"Proceedings of Text2Story - 2nd Workshop on Narrative Extraction From Texts, co-located with the 41st European Conference on Information Retrieval, Text2Story@ECIR 2019, Cologne, Germany, April 14th, 2019.",AlÃ­pio_MÃ¡rio_Jorge Ricardo_Campos Adam_Jatowt Sumit_Bhatia
 898193,Multi-task Learning for Extraction of Adverse Drug Reaction Mentions from Tweets.,Shashank_Gupta Manish_Gupta Vasudeva_Varma Sachin_Pawar Nitin_Ramrakhiyani Girish_Keshav_Palshikar
 898194,Co-training for Extraction of Adverse Drug Reaction Mentions from Tweets.,Shashank_Gupta Manish_Gupta Vasudeva_Varma Sachin_Pawar Nitin_Ramrakhiyani Girish_Keshav_Palshikar
@@ -418,7 +408,6 @@
 898256,Investigating Result Usefulness in Mobile Search.,Jiaxin_Mao Yiqun_Liu Noriko_Kando Cheng_Luo Min_Zhang Shaoping_Ma
 898257,A Micromodule Approach for Building Real-Time Systems with Python-Based Models - Application to Early Risk Detection of Depression on Social Media.,Rodrigo_MartÃ­nez-CastaÃ±o Juan_Carlos_Pichel David_E._Losada Fabio_Crestani
 898258,"Information Scent, Searching and Stopping - Modelling SERP Level Stopping Behaviour.",David_Maxwell Leif_Azzopardi
-898259,Editorial for the 7th Bibliometric-enhanced Information Retrieval Workshop at ECIR 2018.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
 898260,Real-Time Collection of Reliable and Representative Tweets Datasets Related to News Events.,BÃ©atrice_Mazoyer Julia_CagÃ© CÃ©line_Hudelot Marie-Luce_Viaud
 898261,Active Learning Strategies for Technology Assisted Sensitivity Review.,Graham_McDonald Craig_Macdonald Iadh_Ounis
 898262,Towards Maximising Openness in Digital Sensitivity Review Using Reviewing Time Predictions.,Graham_McDonald Craig_Macdonald Iadh_Ounis
@@ -468,7 +457,6 @@
 898306,Aggregating Neural Word Embeddings for Document Representation.,Ruqing_Zhang Jiafeng_Guo Yanyan_Lan Jun_Xu Xueqi_Cheng
 898307,Discriminative Path-Based Knowledge Graph Embedding for Precise Link Prediction.,Maoyuan_Zhang Qi_Wang Wukui_Xu Wei_Li Shuyuan_Sun
 1024065,"Advances in Information Retrieval - 40th European Conference on IR Research, ECIR 2018, Grenoble, France, March 26-29, 2018, Proceedings",Gabriella_Pasi Benjamin_Piwowarski Leif_Azzopardi Allan_Hanbury
-1024066,"Proceedings of the 7th International Workshop on Bibliometric-enhanced Information Retrieval (BIR 2018) co-located with the 40th European Conference on Information Retrieval (ECIR 2018), Grenoble, France, March 26, 2018.",Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
 1024067,"Proceedings of the First International Workshop on Analysis of Broad Dynamic Topics over Social Media (BroDyn 2018) co-located with the 40th European Conference on Information Retrieval (ECIR 2018), Grenoble, France, March 26, 2018.",Tamer_Elsayed Walid_Magdy MÃ¼cahid_Kutlu Maram_Hasanain Reem_Suwaileh
 1024068,"Proceedings of the Second International Workshop on Recent Trends in News Information Retrieval co-located with 40th European Conference on Information Retrieval (ECIR 2018), Grenoble, France, March 26, 2018.",Dyaa_Albakour David_Corney Julio_Gonzalo Miguel_Martinez-Alvarez Barbara_Poblete Andreas_Valochas
 1024069,"Proceedings of the First Workshop on Narrative Extraction From Text (Text2Story 2018) co-located with 40th European Conference on Information Retrieval (ECIR 2018), Grenoble, France, March 26, 2018.",AlÃ­pio_MÃ¡rio_Jorge Ricardo_Campos Adam_Jatowt SÃ©rgio_Nunes
@@ -541,7 +529,6 @@
 1241815,Fixed-Cost Pooling Strategies Based on IR Evaluation Measures.,Aldo_Lipani JoÃ£o_R._M._Palotti Mihai_Lupu Florina_Piroi Guido_Zuccon Allan_Hanbury
 1241816,A Part-of-Speech Enhanced Neural Conversation Model.,Chuwei_Luo Wenjie_Li Qiang_Chen Yanxiang_He
 1241817,Matrix Factorisation with Word Embeddings for Rating Prediction on Location-Based Social Networks.,Jarana_Manotumruksa Craig_Macdonald Iadh_Ounis
-1241818,Editorial for the 5th Bibliometric-enhanced Information Retrieval Workshop at ECIR 2017.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
 1241819,Enhancing Sensitivity Classification with Semantic Features Using Word Embeddings.,Graham_McDonald Craig_Macdonald Iadh_Ounis
 1241820,Summarizing Microblogs for Emergency Relief and Preparedness.,Kanav_Mehra Vibhash_Chandra
 1241821,How Do Order and Proximity Impact the Readability of Event Summaries?,Arunav_Mishra Klaus_Berberich
@@ -585,7 +572,6 @@
 1241859,Predicting Users' Future Interests on Twitter.,Fattane_Zarrinkalam Hossein_Fani Ebrahim_Bagheri Mohsen_Kahani
 1241860,Design Patterns for Fusion-Based Object Retrieval.,Shuo_Zhang Krisztian_Balog
 1362907,"Advances in Information Retrieval - 39th European Conference on IR Research, ECIR 2017, Aberdeen, UK, April 8-13, 2017, Proceedings",Joemon_M._Jose Claudia_Hauff Ismail_SengÃ¶r_AltingÃ¶vde Dawei_Song Dyaa_Albakour Stuart_N._K._Watt John_Tait
-1362908,"Proceedings of the Fifth Workshop on Bibliometric-enhanced Information Retrieval (BIR) co-located with the 39th European Conference on Information Retrieval (ECIR 2017), Aberdeen, UK, April 9th, 2017.",Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
 1362909,"Proceedings of the First International Workshop on Exploitation of Social Media for Emergency Relief and Preparedness co-located with European Conference on Information Retrieval, SMERP@ECIR 2017, Aberdeen, UK, April 9, 2017.",Saptarshi_Ghosh Kripabandhu_Ghosh Tanmoy_Chakraborty Debasis_Ganguly Gareth_J._F._Jones Marie-Francine_Moens
 1362910,"Proceedings of the Workshop on Social Media for Personalization and Search co-located with 39th European Conference on Information Retrieval, SoMePeAS@ECIR 2017, Aberdeen, Scotland, UK, April 9, 2017.",Ludovico_Boratto Andreas_Kaltenbrunner Giovanni_Stilo
 1559348,Diversifying Search Results Using Time - An Information Retrieval Method for Historians.,Dhruv_Gupta Klaus_Berberich
@@ -654,8 +640,6 @@
 1559411,On the Evaluation of Tweet Timeline Generation Task.,Walid_Magdy Tamer_Elsayed Maram_Hasanain
 1559412,First International Workshop on Recent Trends in News Information Retrieval (NewsIR'16).,Miguel_Martinez-Alvarez Udo_Kruschwitz Gabriella_Kazai Frank_Hopfgartner David_Corney Ricardo_Campos Dyaa_Albakour
 1559413,Jitter Search - A News-Based Real-Time Twitter Search Interface.,FlÃ¡vio_Martins JoÃ£o_MagalhÃ£es Jamie_Callan
-1559414,Bibliometric-Enhanced Information Retrieval - 3rd International BIR Workshop.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
-1559415,Editorial for the 3rd Bibliometric-Enhanced Information Retrieval Workshop at ECIR 2016.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
 1559416,Deep Learning to Predict Patient Future Diseases from the Electronic Health Records.,Riccardo_Miotto Li_Li Joel_T._Dudley
 1559417,Leveraging Semantic Annotations to Link Wikipedia and News Archives.,Arunav_Mishra Klaus_Berberich
 1559418,Cross Domain User Engagement Evaluation.,Ali_Montazeralghaem Hamed_Zamani Azadeh_Shakery
@@ -707,7 +691,6 @@
 1559464,The Relationship Between User Perception and User Behaviour in Interactive Information Retrieval Evaluation.,Mengdie_Zhuang Elaine_G._Toms Gianluca_Demartini
 1559465,Understandability Biased Evaluation for Information Retrieval.,Guido_Zuccon
 1677484,"Advances in Information Retrieval - 38th European Conference on IR Research, ECIR 2016, Padua, Italy, March 20-23, 2016. Proceedings",Nicola_Ferro Fabio_Crestani Marie-Francine_Moens Josiane_Mothe Fabrizio_Silvestri Giorgio_Maria_Di_Nunzio Claudia_Hauff Gianmaria_Silvello
-1677485,"Proceedings of the Third Workshop on Bibliometric-enhanced Information Retrieval co-located with the 38th European Conference on Information Retrieval (ECIR 2016), Padova, Italy, March 20, 2016.",Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
 1677486,"Proceedings of the First Workshop on Modeling, Learning and Mining for Cross/Multilinguality (MultiLingMine 2016) co-located with the 38th European Conference on Information Retrieval (ECIR 2016), Padova, Italy, March 20, 2016.",Dino_Ienco Mathieu_Roche Salvatore_Romeo Paolo_Rosso Andrea_Tagarelli
 1677487,"Proceedings of the First International Workshop on Recent Trends in News Information Retrieval co-located with 38th European Conference on Information Retrieval (ECIR 2016), Padua, Italy, March 20, 2016.",Miguel_Martinez-Alvarez Udo_Kruschwitz Gabriella_Kazai Frank_Hopfgartner David_Corney Ricardo_Campos Dyaa_Albakour
 1857414,Polyrepresentative Clustering - A Study of Simulated User Strategies and Representations.,Muhammad_Kamran_Abbasi Ingo_Frommholz
@@ -728,7 +711,6 @@
 1857429,In Praise of Interdisciplinary Research through Scientometrics.,Guillaume_Cabanac
 1857430,Topic-Dependent Sentiment Classification on Twitter.,Steven_Van_Canneyt Nathan_Claeys Bart_Dhoedt
 1857431,Detecting Spam URLs in Social Media via Behavioral Analysis.,Cheng_Cao James_Caverlee
-1857432,Extending Search Facilities via Bibliometric-Enhanced Stratagems.,Zeljko_Carevic Philipp_Mayr
 1857433,Linguistically-Enhanced Search over an Open Diachronic Corpus.,Rafael_C._Carrasco Isabel_MartÃ­nez-Sempere Enrique_MollÃ¡-GandÃ­a Felipe_SÃ¡nchez-MartÃ­nez Gustavo_Candela_Romero Maria_Pilar_Escobar_Esteban
 1857434,Approximate Nearest-Neighbour Search with Inverted Signature Slice Lists.,Timothy_Chappell Shlomo_Geva Guido_Zuccon
 1857435,Multimodal Medical Case-Based Retrieval on the Radiology Image and Report - SNUMedinfo at VISCERAL Retrieval Benchmark.,Sungbin_Choi
@@ -792,8 +774,6 @@
 1857493,Judging Relevance Using Magnitude Estimation.,Eddy_Maddalena Stefano_Mizzaro Falk_Scholer Andrew_Turpin
 1857494,Information Extraction Grammars.,MÃ³nica_Marrero JuliÃ¡n_Urbano
 1857495,Signal - Advanced Real-Time Information Filtering.,Miguel_Martinez-Alvarez Udo_Kruschwitz Wesley_Hall Massimo_Poesio
-1857496,Editorial for the 2nd Bibliometric-Enhanced Information Retrieval Workshop at ECIR 2015.,Philipp_Mayr Ingo_Frommholz Peter_Mutschke
-1857497,Bibliometric-Enhanced Information Retrieval - 2nd International BIR Workshop.,Philipp_Mayr Ingo_Frommholz Andrea_Scharnhorst Peter_Mutschke
 1857498,Content-Based Similarity of Twitter Users.,Stefano_Mizzaro Marco_Pavan Ivan_Scagnetto
 1857499,Scientific Hangman - Gamifying Scientific Evidence for General Public.,Waqas_Moazzam Michael_Riegler Sagar_Sen Mari_NygÃ¥rd
 1857500,Multi-modal Correlated Centroid Space for Multi-lingual Cross-Modal Retrieval.,Aditya_Mogadala Achim_Rettinger
@@ -850,7 +830,6 @@
 1857551,USYD/HES-SO in the VISCERAL Retrieval Benchmark.,Fan_Zhang Yang_Song Weidong_Cai Adrien_Depeursinge Henning_MÃ¼ller
 1857552,Diagnose This If You Can - On the Effectiveness of Search Engines in Finding Medical Self-diagnosis Information.,Guido_Zuccon Bevan_Koopman JoÃ£o_R._M._Palotti
 1977900,"Advances in Information Retrieval - 37th European Conference on IR Research, ECIR 2015, Vienna, Austria, March 29 - April 2, 2015. Proceedings",Allan_Hanbury Gabriella_Kazai Andreas_Rauber Norbert_Fuhr
-1977901,"Proceedings of the Second Workshop on Bibliometric-enhanced Information Retrieval co-located with the 37th European Conference on Information Retrieval (ECIR 2015), Vienna, Austria, March 29th, 2015.",Philipp_Mayr Ingo_Frommholz Peter_Mutschke
 1977902,"Proceedings of the Second International Workshop on Gamification for Information Retrieval co-located with the 37th European Conference on Information Retrieval (ECIR 2015), Vienna, Austria, March 29, 2015.",Frank_Hopfgartner Gabriella_Kazai Udo_Kruschwitz Michael_Meder
 1977903,"Multimodal Retrieval in the Medical Domain - First International Workshop, MRMD 2015, Vienna, Austria, March 29, 2015, Revised Selected Papers",Henning_MÃ¼ller Oscar_Alfonso_JimÃ©nez_del_Toro Allan_Hanbury Georg_Langs Antonio_Foncubierta-RodrÃ­guez
 1977904,"Proceedings of the First International Workshop on Supporting Complex Search Tasks co-located with the 37th European Conference on Information Retrieval (ECIR 2015), Vienna, Austria, March 29, 2015.",Maria_GÃ¤de Mark_Michael_Hall Hugo_C._Huurdeman Jaap_Kamps Marijn_Koolen Mette_Skov Elaine_Toms David_Walsh
@@ -937,7 +916,6 @@
 2148923,Personalizing Aggregated Search.,Stanislav_Makeev Andrey_Plakhov Pavel_Serdyukov
 2148924,Gamification of private digital data archive management.,Carlos_Maltzahn Arnav_Jhala Michael_Mateas Jim_Whitehead
 2148925,Hierarchical Multi-label Conditional Random Fields for Aspect-Oriented Opinion Mining.,Diego_Marcheggiani Oscar_TÃ¤ckstrÃ¶m Andrea_Esuli Fabrizio_Sebastiani
-2148926,Bibliometric-Enhanced Information Retrieval.,Philipp_Mayr Andrea_Scharnhorst Birger_Larsen Philipp_Schaer Peter_Mutschke
 2148927,Towards a Classifier for Digital Sensitivity Review.,Graham_McDonald Craig_Macdonald Iadh_Ounis Timothy_Gollins
 2148928,DAIKnow - A Gamified Enterprise Bookmarking System.,Michael_Meder Till_Plumbaum Frank_Hopfgartner
 2148929,Unsupervised Approach for Identifying Users' Political Orientations.,Youssef_Meguebli Mouna_Kacimi Bich-LiÃªn_Doan Fabrice_Popineau
@@ -981,7 +959,6 @@
 2148968,Content + Attributes - A Latent Factor Model for Recommending Scientific Papers in Heterogeneous Academic Networks.,Chenyi_Zhang Xueyi_Zhao Ke_Wang Jianling_Sun
 2148969,Language Model Document Priors based on Citation and Co-citation Analysis.,Haozhen_Zhao Xiaohua_Hu
 2264895,"Advances in Information Retrieval - 36th European Conference on IR Research, ECIR 2014, Amsterdam, The Netherlands, April 13-16, 2014. Proceedings",Maarten_de_Rijke Tom_Kenter Arjen_P._de_Vries ChengXiang_Zhai Franciska_de_Jong Kira_Radinsky Katja_Hofmann
-2264896,"Proceedings of the First Workshop on Bibliometric-enhanced Information Retrieval co-located with 36th European Conference on Information Retrieval (ECIR 2014), Amsterdam, The Netherlands, April 13, 2014.",Philipp_Mayr Philipp_Schaer Andrea_Scharnhorst Birger_Larsen Peter_Mutschke
 2264897,"Proceedings of the First International Workshop on Gamification for Information Retrieval, GamifIR@ECIR '14, Amsterdam, The Netherlands, April 13, 2014",Frank_Hopfgartner Gabriella_Kazai Udo_Kruschwitz Michael_Meder
 2428232,"Comparing Crowd-Based, Game-Based, and Machine-Based Approaches in Initial Query and Query Refinement Tasks.",Christopher_G._Harris Padmini_Srinivasan
 2428233,Lo mejor de dos idiomas - Cross-Lingual Linkage of Geotagged Wikipedia Articles.,Dirk_Ahlers
@@ -9429,7 +9406,6 @@
 628668,Harvesting Drug Effectiveness from Social Media.,Zi_Chai Xiaojun_Wan Zhao_Zhang Minjie_Li
 628669,Neural Compatibility Ranking for Text-based Fashion Matching.,Suthee_Chaidaroon Yi_Fang Min_Xie Alessandro_Magnani
 628670,Developing Evaluation Metrics for Instant Search Using Mixed Methods Methods.,Praveen_Chandar Jean_Garcia-Gathright Christine_Hosey Brian_St._Thomas Jennifer_Thom
-628671,Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019).,Muthu_Kumar_Chandrasekaran Philipp_Mayr Michihiro_Yasunaga Dayne_Freitag Dragomir_R._Radev Min-Yen_Kan
 628672,Overview and Results - CL-SciSumm Shared Task 2019.,Muthu_Kumar_Chandrasekaran Michihiro_Yasunaga Dragomir_R._Radev Dayne_Freitag Min-Yen_Kan
 628673,Personalized Fashion Recommendation with Visual Explanations based on Multimodal Attention Network - Towards Visually Explainable Recommendation.,Xu_Chen Hanxiong_Chen Hongteng_Xu Yongfeng_Zhang Yixin_Cao Zheng_Qin Hongyuan_Zha
 628674,Reinforcement Learning for User Intent Prediction in Customer Service Bots.,Cen_Chen Chilin_Fu Xu_Hu Xiaolu_Zhang Jun_Zhou Xiaolong_Li Forrest_Sheng_Bao
@@ -9719,7 +9695,6 @@
 652944,"Proceedings of the SIGIR 2017 Workshop On eCommerce co-located with the 40th International ACM SIGIR Conference on Research and Development in Information Retrieval, eCOM@SIGIR 2017, Tokyo, Japan, August 11, 2017.",Jon_Degenhardt Surya_Kallumadi Maarten_de_Rijke Luo_Si Andrew_Trotman Yinghui_Xu
 652945,"The SIGIR 2018 Workshop On eCommerce co-located with the 41st International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2018), Ann Arbor, Michigan, USA, July 12, 2018.",Jon_Degenhardt Giuseppe_Di_Fabbrizio Surya_Kallumadi Mohit_Kumar Andrew_Trotman Yiu-Chang_Lin Huasha_Zhao
 652946,"Proceedings of the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, SIGIR 2019, Paris, France, July 21-25, 2019.",Benjamin_Piwowarski Max_Chevalier Ã‰ric_Gaussier Yoelle_Maarek Jian-Yun_Nie Falk_Scholer
-652947,"Proceedings of the 4th Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019) co-located with the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2019), Paris, France, July 25, 2019.",Muthu_Kumar_Chandrasekaran Philipp_Mayr
 652948,"Proceedings of the SIGIR 2019 Workshop on eCommerce, co-located with the 42st International ACM SIGIR Conference on Research and Development in Information Retrieval, eCom@SIGIR 2019, Paris, France, July 25, 2019.",Jon_Degenhardt Surya_Kallumadi Utkarsh_Porwal Andrew_Trotman
 652949,"Proceedings of the Third International Workshop on Recent Trends in News Information Retrieval, co-located with 42nd International ACM Conference on Research and Development in Information Retrieval (SIGIR 2019), Paris, France, July 25, 2019.",Dyaa_Albakour Miguel_Martinez Sylvia_Tippmann Ahmet_Aker Jonathan_Stray Shiri_Dori-Hacohen Alberto_BarrÃ³n-CedeÃ±o
 652950,"Proceedings of the Open-Source IR Replicability Challenge co-located with 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval, OSIRRC@SIGIR 2019, Paris, France, July 25, 2019.",Ryan_Clancy Nicola_Ferro Claudia_Hauff Jimmy_Lin Tetsuya_Sakai Ze_Zhong_Wu
@@ -9768,7 +9743,6 @@
 998736,Deep Semantic Text Hashing with Weak Supervision.,Suthee_Chaidaroon Travis_Ebesu Yi_Fang
 998737,"Knowledge Extraction and Inference from Text - Shallow, Deep, and Everything in Between.",Soumen_Chakrabarti
 998738,Enhanced Contextual Recommendation using Social Media Data.,Anirban_Chakraborty
-998739,Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2018).,Muthu_Kumar_Chandrasekaran Kokil_Jaidka Philipp_Mayr
 998740,TopSig at the SIGIR'eCom 2018 Rakuten Data Challenge.,Timothy_Chappell Shlomo_Geva Lawrence_Buckingham
 998741,Attention-based Hierarchical Neural Query Suggestion.,Wanyu_Chen Fei_Cai Honghui_Chen Maarten_de_Rijke
 998742,CAN - Enhancing Sentence Similarity Modeling with Collaborative and Adversarial Network.,Qin_Chen Qinmin_Hu Jimmy_Xiangji_Huang Liang_He
@@ -9890,7 +9864,6 @@
 998858,Deep Domain Adaptation Based on Multi-layer Joint Kernelized Distance.,Sitong_Mao Xiao_Shen Fu-Lai_Chung
 998859,Case-Based Retrieval Using Document-Level Semantic Networks.,Stefano_Marchesin
 998860,A/B Testing with APONE.,MÃ³nica_Marrero Claudia_Hauff
-998861,Editorial for the 3rd Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL) at SIGIR 2018.,Philipp_Mayr Muthu_Kumar_Chandrasekaran Kokil_Jaidka
 998862,Automatic Ground Truth Expansion for Timeline Evaluation.,Richard_McCreadie Craig_Macdonald Iadh_Ounis
 998863,On Link Prediction in Knowledge Bases - Max-K Criterion and Prediction Protocols.,Jiajie_Mei Richong_Zhang Yongyi_Mao Ting_Deng
 998864,HyPlag - A Hybrid Approach to Academic Plagiarism Detection.,Norman_Meuschke Vincent_Stange Moritz_Schubotz Bela_Gipp
@@ -11976,3 +11949,30 @@
 650422,Learning How to Correct a Knowledge Base from the Edit History.,Thomas_Pellissier_Tanon Camille_Bourgaux Fabian_M._Suchanek
 650423,Summarizing Entity Temporal Evolution in Knowledge Graphs.,Mayesha_Tasnim Diego_Collarana Damien_Graux Fabrizio_Orlandi Maria-Esther_Vidal
 650424,Characterizing Activity on the Deep and Dark Web.,Nazgol_Tavabi Nathan_Bartley AndrÃ©s_Abeliuk Sandeep_Soni Emilio_Ferrara Kristina_Lerman
+161327,Remembering Don Swanson - Link to Bibliometric-enhanced Information Retrieval.,Aparna_Basu
+161331,Preface to the 10th Workshop on Bibliometric-enhanced Information Retrieval at ECIR 2020.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
+161340,Why we Need Another Ten Years of Bibliometric-enhanced Information Retrieval.,Mike_Thelwall
+178080,Bibliometric-Enhanced Information Retrieval 10th Anniversary Workshop Edition.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
+178216,Bibliometric-Enhanced Legal Information Retrieval.,Gineke_Wiggers
+252272,"Proceedings of the 10th International Workshop on Bibliometric-enhanced Information Retrieval co-located with 42nd European Conference on Information Retrieval, BIR@ECIR 2020, Lisbon, Portugal, April 14th, 2020 [online only].",Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
+521659,Bibliometric-Enhanced Information Retrieval - 8th International BIR Workshop.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
+521660,Editorial for the 8th Bibliometric-enhanced Information Retrieval Workshop at ECIR 2019.,Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
+521757,Bibliometric-Enhanced arXiv - A Data Set for Paper-Based and Citation-Based Tasks.,Tarek_Saier Michael_FÃ¤rber
+653559,"Proceedings of the 8th International Workshop on Bibliometric-enhanced Information Retrieval (BIR 2019) co-located with the 41st European Conference on Information Retrieval (ECIR 2019), Cologne, Germany, April 14, 2019.",Guillaume_Cabanac Ingo_Frommholz Philipp_Mayr
+898259,Editorial for the 7th Bibliometric-enhanced Information Retrieval Workshop at ECIR 2018.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1024066,"Proceedings of the 7th International Workshop on Bibliometric-enhanced Information Retrieval (BIR 2018) co-located with the 40th European Conference on Information Retrieval (ECIR 2018), Grenoble, France, March 26, 2018.",Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1241818,Editorial for the 5th Bibliometric-enhanced Information Retrieval Workshop at ECIR 2017.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1362908,"Proceedings of the Fifth Workshop on Bibliometric-enhanced Information Retrieval (BIR) co-located with the 39th European Conference on Information Retrieval (ECIR 2017), Aberdeen, UK, April 9th, 2017.",Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1559414,Bibliometric-Enhanced Information Retrieval - 3rd International BIR Workshop.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1559415,Editorial for the 3rd Bibliometric-Enhanced Information Retrieval Workshop at ECIR 2016.,Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1677485,"Proceedings of the Third Workshop on Bibliometric-enhanced Information Retrieval co-located with the 38th European Conference on Information Retrieval (ECIR 2016), Padova, Italy, March 20, 2016.",Philipp_Mayr Ingo_Frommholz Guillaume_Cabanac
+1857432,Extending Search Facilities via Bibliometric-Enhanced Stratagems.,Zeljko_Carevic Philipp_Mayr
+1857496,Editorial for the 2nd Bibliometric-Enhanced Information Retrieval Workshop at ECIR 2015.,Philipp_Mayr Ingo_Frommholz Peter_Mutschke
+1857497,Bibliometric-Enhanced Information Retrieval - 2nd International BIR Workshop.,Philipp_Mayr Ingo_Frommholz Andrea_Scharnhorst Peter_Mutschke
+1977901,"Proceedings of the Second Workshop on Bibliometric-enhanced Information Retrieval co-located with the 37th European Conference on Information Retrieval (ECIR 2015), Vienna, Austria, March 29th, 2015.",Philipp_Mayr Ingo_Frommholz Peter_Mutschke
+2148926,Bibliometric-Enhanced Information Retrieval.,Philipp_Mayr Andrea_Scharnhorst Birger_Larsen Philipp_Schaer Peter_Mutschke
+2264896,"Proceedings of the First Workshop on Bibliometric-enhanced Information Retrieval co-located with 36th European Conference on Information Retrieval (ECIR 2014), Amsterdam, The Netherlands, April 13, 2014.",Philipp_Mayr Philipp_Schaer Andrea_Scharnhorst Birger_Larsen Peter_Mutschke
+628671,Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019).,Muthu_Kumar_Chandrasekaran Philipp_Mayr Michihiro_Yasunaga Dayne_Freitag Dragomir_R._Radev Min-Yen_Kan
+652947,"Proceedings of the 4th Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2019) co-located with the 42nd International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR 2019), Paris, France, July 25, 2019.",Muthu_Kumar_Chandrasekaran Philipp_Mayr
+998739,Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL 2018).,Muthu_Kumar_Chandrasekaran Kokil_Jaidka Philipp_Mayr
+998861,Editorial for the 3rd Joint Workshop on Bibliometric-enhanced Information Retrieval and Natural Language Processing for Digital Libraries (BIRNDL) at SIGIR 2018.,Philipp_Mayr Muthu_Kumar_Chandrasekaran Kokil_Jaidka
