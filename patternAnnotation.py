@@ -1,14 +1,13 @@
 import pandas as pd
-import krovetz as ks
-import re
-from prefixspan import PrefixSpan
 import numpy as np
+import re
+import krovetz as ks
+from prefixspan import PrefixSpan
 from mlxtend.frequent_patterns import fpgrowth
 from mlxtend.preprocessing import TransactionEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# stopwordlist = list()
 stopwordlist = ['ourselves', 'hers', 'between', 'yourself', 'but', 'again', 'there', 'about',
                 'once', 'during', 'out', 'very', 'having', 'with', 'they', 'own', 'an', 'be', 
                 'some', 'for', 'do', 'its', 'yours', 'such', 'into', 'of', 'most', 'itself',
@@ -221,22 +220,23 @@ def main():
         sorted_title_dict1 = dict(list(sorted_title_dict)[0:max_len])
         freq_auth_transactions.update({list_of_freq_auth[i]:sorted_title_dict1})
 
-    # To find the strongest SSP - Match against similarity of the conrtext units
+    # To find the strongest SSP - Match against similarity of the context units
 
     freq_auth_SSPs = {}
     list_of_freq_auth = list(freqauth_context_ind_dict.keys())
     list_of_freq_auth_CI =  list(freqauth_context_ind_dict.values())
+    len_list_of_freq_auth_CI = len(list_of_freq_auth_CI)
 
-    context_indicator_similarity = np.zeros([64,64],dtype = float)
-    for i in range (0,len(list_of_freq_auth_CI)):
-        for j in range (0,len(list_of_freq_auth_CI)):
+    context_indicator_similarity = np.zeros([len_list_of_freq_auth_CI, len_list_of_freq_auth_CI],dtype = float)
+    for i in range (0,len_list_of_freq_auth_CI):
+        for j in range (0,len_list_of_freq_auth_CI):
             cos_sim = cos_similarity(list_of_freq_auth_CI[i],list_of_freq_auth_CI[j])
             cos_sim = round(cos_sim, 3)
             if (i != j):
                 context_indicator_similarity[i][j] = cos_sim
                 context_indicator_similarity[j][i] = cos_sim
 
-    context_indicator_similarity_idx = np.zeros([64, 3], dtype=int)
+    context_indicator_similarity_idx = np.zeros([len_list_of_freq_auth_CI, 3], dtype=int)
     for i in range(0,len(context_indicator_similarity)):
         context_indicator_similarity_idx[i] = np.argsort(context_indicator_similarity[i])[-3:]
 
@@ -284,7 +284,6 @@ def main():
             temp_list.append(authors)
         SSP_authors_formatted.append(temp_list)
 
-
     with open("./output.txt", 'w', encoding="utf-8") as f:
         f.write('Pattern' + '||' + 'Context Indicator' + '||' + 'Transaction 1' + '||' +
                 'Transaction 2' + '||'  + 'Transaction 3' + '||'  + 'Transaction 4' + '||' + 'SSP - Co-Author' +
@@ -301,7 +300,6 @@ def main():
             ssp_titles = '; '.join(SSP_Title_List[i])
             f.write(ssp_titles )
             f.write('\n')
-
 
 if __name__ == "__main__":
     main()
