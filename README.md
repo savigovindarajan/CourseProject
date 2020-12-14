@@ -53,6 +53,8 @@ For each of the 64 Frequent Itemsets from the	 above step:
 ## Derive the list of Semantically Similar Author/Co-Author pattern:
 •	Based on the context indicators identified for each of the Frequent Itemset, we identified which of the other 63 context indicators are similar using Cosine Similarity. We took the top 3 similar Context Indicators & took their frequent title pattern as the SSP
 
+# Video Presentation:
+https://mediaspace.illinois.edu/media/t/1_hdhp3434
 
 # References:
 Qiaozhu Mei, Dong Xin, Hong Cheng, Jiawei Han, and ChengXiang Zhai. 2006. Generating semantic annotations for frequent patterns with context analysis. In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD 2006). ACM, New York, NY, USA, 337-346. DOI=10.1145/1150402.1150441
