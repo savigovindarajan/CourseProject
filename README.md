@@ -1,6 +1,8 @@
 # CourseProject: CS410 - Text Information Systems
 
-# Project Overview:
+# Generating Semantic Annotations for Frequent Pattern with Context Analysis
+
+# Project Overview: 
 In this project, we have tried to reproduce the model and results from the following published paper on Pattern Annotation.
 Qiaozhu Mei, Dong Xin, Hong Cheng, Jiawei Han, and ChengXiang Zhai. 2006. Generating semantic annotations for frequent patterns with context analysis. In Proceedings of the 12th ACM SIGKDD international conference on Knowledge discovery and data mining (KDD 2006). ACM, New York, NY, USA, 337-346. DOI=10.1145/1150402.1150441
 The goal is to annotate a frequent pattern with in-depth, concise, and structured information that can better indicate the hidden meanings of the pattern. This model will automatically generate such annotation for a frequent pattern by constructing its context model, selecting informative context indicators, and extracting representative transactions and semantically similar patterns. 
